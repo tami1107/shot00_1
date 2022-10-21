@@ -13,11 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ソース ファイル\Obfect">
-      <UniqueIdentifier>{a465ba53-1890-405c-b3ae-c846a7e2a9e0}</UniqueIdentifier>
+    <Filter Include="ソース ファイル\Object">
+      <UniqueIdentifier>{70b2cc0b-306c-4325-b1cb-5f6cffaa0bdc}</UniqueIdentifier>
     </Filter>
     <Filter Include="ヘッダー ファイル\Object">
-      <UniqueIdentifier>{2d465d7d-4049-4881-8c3e-3d69b1ba38a4}</UniqueIdentifier>
+      <UniqueIdentifier>{ce289fba-341e-486f-8fb1-57e43e4e37f7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -31,13 +31,13 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Object\enemy.cpp">
-      <Filter>ソース ファイル\Obfect</Filter>
+      <Filter>ソース ファイル\Object</Filter>
     </ClCompile>
     <ClCompile Include="Object\player.cpp">
-      <Filter>ソース ファイル\Obfect</Filter>
+      <Filter>ソース ファイル\Object</Filter>
     </ClCompile>
     <ClCompile Include="Object\shot.cpp">
-      <Filter>ソース ファイル\Obfect</Filter>
+      <Filter>ソース ファイル\Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

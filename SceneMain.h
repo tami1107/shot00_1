@@ -1,8 +1,8 @@
 #pragma once
 
 #include "player.h"
-#include "enemy.h"
 #include "shot.h"
+#include "enemy.h"
 
 class SceneMain
 {
@@ -19,6 +19,9 @@ public:
 	void update();
 	// 毎フレームの描画
 	void draw();
+
+	// ショットを撃つ
+	bool createShot(Vec2 pos);
 	
 private:
 	// ショットの最大数

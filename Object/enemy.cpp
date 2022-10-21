@@ -4,9 +4,7 @@
 
 namespace
 {
-	// X方向、Y方向の最大速度
-	constexpr float kSpeedMax = 8.0f;
-	constexpr float kAcc = 0.4f;
+	
 }
 
 Enemy::Enemy()
@@ -29,15 +27,27 @@ void Enemy::init()
 
 void Enemy::update()
 {
-	// パッド(もしくはキーボード)からの入力を取得する
-	int padState = GetJoypadInputState(DX_INPUT_KEY_PAD1);
-
 	m_pos += m_vec;
 }
 
 void Enemy::draw()
 {
-	//	DrawGraphF(m_pos.x, m_pos.y, m_handle, true);
-		// 読みこんだグラフィックを反転描画
+	//DrawGraphF(m_pos.x, m_pos.y, m_handle, true);
 	DrawTurnGraphF(m_pos.x, m_pos.y, m_handle, true);
+}
+
+float Enemy::getColWidth()
+{
+	float tempX = 0;
+	float tempY = 0;
+	GetGraphSizeF(m_handle, &tempX, &tempY);
+	return tempX;
+}
+
+float Enemy::getColHeight()
+{
+	float tempX = 0;
+	float tempY = 0;
+	GetGraphSizeF(m_handle, &tempX, &tempY);
+	return tempY;
 }
